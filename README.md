@@ -1,6 +1,6 @@
 ## How to run project
 
-### `npm update`
+### `npm install`
 ### `npm audit fix`
 ### `npm run build`
 ### `npm install -g serve`

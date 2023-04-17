@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { all } from '../../scripts/script.js';
 import EntranceForm from "../EntranceForm/EntranceForm.js";
 import Header from "../Header/Header.js";
 import PassTest from "../PassTest/PassTest.js";
@@ -108,14 +107,6 @@ class App extends Component {
     localStorage.setItem(username, serialUserData);
   }
 
-  componentDidMount () {
-    // let viewportWidth = window.innerWidth;	// ширина страницы
-    // console.log("width: " + viewportWidth);
-
-    // jQuery
-    // all();
-  }
-
   render() {
     let page = this.state.page;
 
@@ -142,7 +133,6 @@ class App extends Component {
             </div>
           </div>
         );
-        break;
 
       case "MainPage":
         return (
@@ -160,7 +150,6 @@ class App extends Component {
             </div>
           </div>
         );
-        break;
 
       case "ChooseTest":
         return (
@@ -176,7 +165,6 @@ class App extends Component {
             </div>
           </div>
         );
-        break;
 
       case "PassTest":
         return (
@@ -188,7 +176,6 @@ class App extends Component {
             </div>
           </div>
         );
-        break;
 
       case "CreateTest":
         return (
@@ -200,7 +187,6 @@ class App extends Component {
             </div>
           </div>
         );
-        break;
 
       case "EditTest":
         return (
@@ -212,7 +198,6 @@ class App extends Component {
             </div>
           </div>
         );
-        break;
     }
   }
 }
